@@ -1,0 +1,145 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: linear-gradient(to right, lightyellow, lightblue, pink);
+}
+
+.container h2 {
+	position: absolute;
+	top: 50;
+	left: 50%;
+	transform: translate(-50%, 150%);
+	text-align: center;
+	font-family: poppins;
+	color: transparent;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 85px;
+	margin: 0;
+	-webkit-text-stroke: 2px purple;
+	line-height: 85px;
+}
+
+
+.element div{
+	position: absolute;
+	background: transparent;
+	}
+
+.element div:before,
+.element div:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: mediumpurple;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+.element div:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+
+.element div:nth-child(1){
+	top: 15%;
+	left: 15%;
+	animation: animate 8s linear infinite;
+}
+
+.element div:nth-child(2){
+	top: 15%;
+	left: 85%;
+	animation: animate 4s linear infinite;
+}
+
+.element div:nth-child(3){
+	top: 30%;
+	left: 25%;
+	animation: animate 4s linear infinite;
+}
+
+.element div:nth-child(4){
+	top: 30%;
+	left: 75%;
+	animation: animate 8s linear infinite;
+}
+
+.element div:nth-child(5){
+	top: 50%;
+	left: 15%;
+	animation: animate 8s linear infinite;
+}
+
+.element div:nth-child(6){
+	top: 50%;
+	left: 55%;
+	animation: animate 4s linear infinite;
+}
+
+.element div:nth-child(7){
+	top: 50%;
+	left: 85%;
+	animation: animate 8s linear infinite;
+}
+
+.element div:nth-child(8){
+	top: 20%;
+	left: 50%;
+	animation: animate 4s linear infinite;
+}
+
+.element div:nth-child(9){
+	top: 80%;
+	left: 50%;
+	animation: animate 8s linear infinite;
+}
+
+.element div:nth-child(10){
+	top: 70%;
+	left: 25%;
+	animation: animate 4s linear infinite;
+}
+
+.element div:nth-child(11){
+	top: 70%;
+	left: 75%;
+	animation: animate 8s linear infinite;
+}
+
+.element div:nth-child(12){
+	top: 90%;
+	left: 15%;
+	animation: animate 4s linear infinite;
+}
+
+.element div:nth-child(13){
+	top: 90%;
+	left: 85%;
+	animation: animate 8s linear infinite;
+}
+
+@keyframes animate{
+	0%{
+		transform: scale(0) translateY(-90px);
+		opacity: 1;
+	}
+
+	100%{
+		transform: scale(1.3) translateY(-90px);
+		border-radius: 50%;
+		opacity: 0;
+	}
+}
